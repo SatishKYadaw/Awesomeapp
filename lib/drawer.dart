@@ -36,6 +36,18 @@ class MyDrawer extends StatelessWidget {
               subtitle: Text("sannidhyakushwaha@gmail.com"),
               trailing: Icon(Icons.send),
             ),
+            ListTile(
+              leading: Icon(Icons.info),
+              title: Text("Abput Us"),
+              subtitle: Text("Know abuut us"),
+              trailing: Icon(Icons.star),
+            ),
+            ListTile(
+              leading: Icon(Icons.logout),
+              title: Text("Logout"),
+              subtitle: Text("Tap here to logout"),
+              trailing: Icon(Icons.exit),
+            ),
           ],
         ),
       ),
