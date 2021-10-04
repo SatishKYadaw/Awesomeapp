@@ -9,6 +9,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   TextEditingController _nameController = TextEditingController();
+  PasswordController _nameController = PasswordController();
   var myText = "Change Me";
   @override
   void initState() {
@@ -49,6 +50,18 @@ class _HomePageState extends State<HomePage> {
                         border: OutlineInputBorder(),
                         hintText: "Enter something",
                         labelText: "Name"),
+                  ),
+                )
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: TextField(
+                    controller: _passwordController,
+                    keyboardType: TextInputType.text,
+                    // obscureText: true, for secure password while typing
+                    decoration: InputDecoration(
+                        border: OutlineInputBorder(),
+                        hintText: "Enter something",
+                        labelText: "Password"),
                   ),
                 )
               ],
